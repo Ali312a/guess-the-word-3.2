@@ -1,6 +1,4 @@
-import words from "./words.json";
-
 export const getRandomWord = () => {
-  // Lowercase words for simplicity
-  return words[Math.floor(Math.random() * words.length)].toLowerCase();
+  const words = ['react', 'javascript', 'node', 'vite', 'express'];
+  return words[Math.floor(Math.random() * words.length)];
 };
